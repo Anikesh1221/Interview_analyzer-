@@ -76,7 +76,7 @@ if uploaded_file is not None:
     if st.button('Analyze Interview'):
         with st.spinner('Analyzing...'):
 
-            with tempfile.NamedTemporaryFile(delete=False,suffix=' .wav') as tmp_file:
+            with tempfile.NamedTemporaryFile(delete=False,suffix='.wav') as tmp_file:
                 tmp_file.write(uploaded_file.read())
                 temp_audio_path=tmp_file.name
 
@@ -153,9 +153,9 @@ if uploaded_file is not None:
 
             if filler_count >3:
                 Suggestions.append('Reduce filler words like um / uh')
-            elif filler_count < 100:
+            elif wpm < 100:
                 Suggestions.append('Speak a little Faster') 
-            elif filler_count > 160 :
+            elif wpm > 160 :
                 Suggestions.append('Slow Down While Speaking')
             elif pause_count > 3:
                 Suggestions.append('Try Reducing long Pauses While Speaking ')

@@ -1,0 +1,6 @@
+streamlit 
+tempfile
+WhisperModel
+librosa
+numpy
+pandas 

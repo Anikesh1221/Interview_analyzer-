@@ -171,7 +171,7 @@ if uploaded_file is not None:
 
             # module 7 
 
-            audio,sr= librosa.load(temp_audio_path)
+            audio, sr = librosa.load(temp_audio_path, sr=None)
             intervals= librosa.effects.split(audio,top_db=20)
             
             

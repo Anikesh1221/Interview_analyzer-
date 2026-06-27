@@ -1,6 +1,4 @@
 streamlit 
-tempfile
-WhisperModel
-librosa
 numpy
-pandas 
+pandas
+scikit-learn

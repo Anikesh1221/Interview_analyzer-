@@ -1,4 +1,8 @@
-streamlit 
+streamlit
+faster-whisper
+librosa
 numpy
 pandas
-scikit-learn
+reportlab
+soundfile
+ffmpeg-python
